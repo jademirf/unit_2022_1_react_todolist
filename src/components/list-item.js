@@ -1,6 +1,11 @@
-const ListItem = ({ title }) => {
+const ListItem = ({ title, status }) => {
     return (
-        <li>{title}</li>
+        <li>
+            <p>{title}</p>
+        <span>
+            { status ? "Completed" : "Ongoing" }
+        </span>
+        </li>
     )
 }
 
